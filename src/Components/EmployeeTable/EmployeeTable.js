@@ -25,7 +25,7 @@ export default function EmployeeTable() {
                 </div>
             </div>
             <table className="w-full  text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
-                <thead className="text-xs  text-white   bg-[#282A36] dark:bg-gray-700 dark:text-gray-400">
+                <thead className="text-sm  text-white   bg-[#282A36] dark:bg-gray-700 dark:text-gray-400">
                     <tr >
                         <th scope="col" className="p-4">
                             <div className="flex items-center">
@@ -33,24 +33,16 @@ export default function EmployeeTable() {
                                 <label for="checkbox-all-search" className="sr-only">checkbox</label>
                             </div>
                         </th>
-                        <th scope="col" className="px-6 py-3">Name</th>
-                        <th scope="col" className="px-6 py-3">Job title </th>
-                        <th scope="col" className="px-6 py-3">Department </th>
-                        <th scope="col" className="px-6 py-3">Based Salary </th>
-                        <th scope="col" className="px-6 py-3">Total Project</th>
-                        <th scope="col" className="px-6 py-3">Status</th>
-                        <th scope="col" className="px-6 py-3">Action</th>
+                        <th scope="col" className="px-3 py-3">Name</th>
+                        <th scope="col" className="px-3 py-3">Job title </th>
+                        <th scope="col" className="px-3 py-3">Department </th>
+                        <th scope="col" className="px-3 py-3">Based Salary </th>
+                        <th scope="col" className="px-3 py-3">Projects</th>
+                        <th scope="col" className="px-3 py-3">Status</th>
+                        <th scope="col" className="px-3 py-3">Action</th>
                     </tr>
                 </thead>
-                <tbody>
                     <EmployeeDataComponent />
-                    <EmployeeDataComponent />
-                    <EmployeeDataComponent />
-                    <EmployeeDataComponent />
-                    <EmployeeDataComponent />
-                    <EmployeeDataComponent />
-
-                </tbody>
             </table>
         </div>
 
