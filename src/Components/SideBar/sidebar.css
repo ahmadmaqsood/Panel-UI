@@ -1,0 +1,64 @@
+.navbar {
+  position: fixed;
+  overflow-y: scroll;
+  top: 15px;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  /* Ensure the sidebar is above other content */
+  background-color: #111827;
+  min-width: 320px;
+  /* Adjust width as needed */
+  transition: transform 0.3s ease-in-out;
+  /* Apply transition effect */
+}
+/* Customize the scrollbar */
+.navbar::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+  width: 0;
+}
+
+/* Track */
+.navbar::-webkit-scrollbar-track {
+  background: #111827; /* Change the scrollbar track color */
+}
+
+/* Handle */
+.navbar::-webkit-scrollbar-thumb {
+  background: #8b56c1; /* Change the scrollbar thumb color */
+  border-radius: 5px; /* Adjust the scrollbar thumb border-radius */
+}
+
+/* Handle on hover */
+.navbar::-webkit-scrollbar-thumb:hover {
+  background: #a879e2; /* Change the scrollbar thumb color on hover */
+}
+
+.sidebar {
+  background: linear-gradient(0deg, hsla(230.77, 26.53%, 9.61%, 1) 0%, hsla(232, 16.48%, 17.84%, 1) 100%);
+  /* Sidebar.css */
+
+  /* .navbar .hidden {
+  transform: translateX(-100%);
+} */
+
+}
+
+.sidebar .hover__effect:hover {
+  color: #8b56c1 !important;
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    /* Ensure the sidebar is above other content */
+    background-color: #111827;
+    min-width: 370px;
+    /* Adjust width as needed */
+    transition: transform 0.3s ease-in-out;
+  }
+}
